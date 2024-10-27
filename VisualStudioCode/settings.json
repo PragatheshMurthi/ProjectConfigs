@@ -1,0 +1,231 @@
+{
+    "workbench.colorTheme": "Visual Studio 2017 Dark - C++",
+    "editor.codeActionsOnSave": {},
+    "better-comments.tags": [
+
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "/* */",
+            "color": "#FF0000",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": true
+        },       
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#3e513e",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+    "cmake.showOptionsMovedNotification": false,
+    "debug.onTaskErrors": "showErrors",
+    
+    "code-runner.executorMap": {
+    
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc -I\\headers $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "zig": "zig run",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runghc",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "sml": "cd $dir && sml $fileName",
+        "mojo": "mojo run",
+        "erlang": "escript",
+        "spwn": "spwn build",
+        "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
+        "gleam": "gleam run -m $fileNameWithoutExt"
+    },
+    "git.suggestSmartCommit": false,
+    "C_Cpp.intelliSenseCachePath": "C:\\Pragathesh\\C_Programming\\Learning-C\\headers/**",
+
+    "editor.fontWeight": "bold", // This will make the text bold
+
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "variable.other.global"  // Adjust this scope as needed
+                ],
+                "settings": {
+                    "foreground": "#eb9b5abe"  // Change this to your desired color
+                }
+            },
+            {
+                "scope": [
+                    "entity.name.type",      // Additional scope for types
+                    "variable.other.type",  // This scope usually applies to typedefs
+                    "support.types"
+                ],
+                "settings": {
+                    "foreground": "#0cbc1ea5"  // Change this to your desired color
+                }
+            },
+            {
+                "scope": [
+                    "variable.other.enummember.c"
+                ],
+                "settings": {
+                    "foreground": "#68f076"  // Change this to your desired color
+                }
+            },
+            {
+                "scope": [
+                    "comment",                  // For single-line comments
+                    "comment.block.c",            // For block comments
+                    "comment.line.double-slash", // For specific line comments
+                    "comment.line.number-sign"
+                ],
+                "settings": {
+                    "foreground": "#3e513e"     // Change this to your desired color
+                }
+            },
+            {
+                "scope": [
+                    "meta.preprocessor.c",
+                    "keyword.control.directive.conditional.c",
+                    "keyword.control.directive.include.c",
+                    "entity.name.function.preprocessor.c",
+                    "keyword.operator.c"
+                    ],  // Scope for preprocessor directives
+                "settings": {
+                    "foreground": "#b12424c3"       // Change this to your desired color
+                }
+            },
+            {
+                "scope": [
+                    "keyword.control.directive.conditional.c",
+                    "keyword.control.directive.define.c"
+                    ],  // Scope for preprocessor directives
+                "settings": {
+                    "foreground": "#b1242470"       // Change this to your desired color
+                }
+            },
+            {
+                "scope": [
+                    "entity.name.function.preprocessor.c"
+                    ],  // Scope for preprocessor directives
+                "settings": {
+                    "foreground": "#f64c4cd0"       // Change this to your desired color
+                }
+            },
+            {
+                "scope": [
+                    "variable.other.local.c",
+                    "variable.other.property.c"
+                    ],  // Scope for preprocessor directives
+                "settings": {
+                    "foreground": "#308181ae"       // Change this to your desired color
+                }
+            },
+            {
+                "scope": [
+                    "string.quoted.double.c"
+                    ],  // Scope for preprocessor directives
+                "settings": {
+                    "foreground": "#afc22196",       // Change this to your desired color
+                    
+                    
+                }
+            },
+            {
+                "scope": [
+                    "entity.name.function.c"
+                    ],  // Scope for preprocessor directives
+                "settings": {
+                    "foreground": "#9480f196",       // Change this to your desired color
+                    
+                    
+                }
+            }                       
+        ]
+    },
+    "cSpell.userWords": [
+        "FLOATV"
+    ]
+}

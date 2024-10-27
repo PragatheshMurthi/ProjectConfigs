@@ -1,0 +1,138 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+shift+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+down",
+        "command": "-editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+s",
+        "command": "editor.action.addCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k ctrl+c",
+        "command": "-editor.action.addCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "/*\n * API NAME: $1\n * DES:\n */"
+        },
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+0",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "#if 0\n\t${1}\n#endif"
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+s",
+        "command": "editor.action.blockComment",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "F4",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "F3",
+        "command": "editor.action.addSelectionToPreviousFindMatch",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+0",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "/* $1 - $CURRENT_DATE/$CURRENT_MONTH/$CURRENT_YEAR - $CURRENT_HOUR:$CURRENT_MINUTE */\n#if 0\n$TM_SELECTED_TEXT\n#endif"
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "/*\n * FILE NAME :\n * DEC       :\n *\n */\n/*==============INCLUDES=============*/\n\n/*==============INTERNAL=============*/\n\n/*===============MACROS==============*/\n\n/*=============PROTOTYPES============*/\n\n/*=============DEFINITIONS===========*/"
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+f4",
+        "command": "editor.action.nextSelectionMatchFindAction",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+f3",
+        "command": "-editor.action.nextSelectionMatchFindAction",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+f3",
+        "command": "editor.action.previousSelectionMatchFindAction",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+f3",
+        "command": "-editor.action.previousSelectionMatchFindAction",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+oem_2",
+        "command": "references-view.findReferences",
+        "when": "editorHasReferenceProvider"
+    },
+    {
+        "key": "shift+alt+f12",
+        "command": "-references-view.findReferences",
+        "when": "editorHasReferenceProvider"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "OS_MessageLogging(\"%s %d>$TNG$<$1>\",__LINE__,gscpCFileName);"
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+oem_2",
+        "command": "workbench.action.findInFiles"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "-workbench.action.findInFiles"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "/* \n$1 *\n*/"
+        },
+        "when": "editorTextFocus"
+    }
+]
