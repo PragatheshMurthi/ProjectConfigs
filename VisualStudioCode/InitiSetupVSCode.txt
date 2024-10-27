@@ -4,8 +4,9 @@
 	1.3) Better shell syntax
 	1.4) Better comments
 	1.5) c/c++ intelesence
-	1.4) c/c++ extension pack
-	1.4) c/c++ Themes
+	1.6) c/c++ extension pack
+	1.7) c/c++ Themes
+	1.8) code runner
 2) Change the color theme to 2017 visual studio c/c++ dark theme
 3) Move the settings.json and keybindings.json in the global project folder(search settings.json in the workspace. Current environment lists "C:\Users\gunas\AppData\Roaming\Code\User" as global env path. Copy the both files in the global directory.).
 4) To run the Warning/Error checker to run automatically scan if code is saved or opened the settings under C_CPP > Code analysis: Run Automatically has to be enabled.
