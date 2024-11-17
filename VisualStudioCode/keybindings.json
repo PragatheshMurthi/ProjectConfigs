@@ -115,7 +115,7 @@
         "key": "ctrl+p",
         "command": "editor.action.insertSnippet",
         "args": {
-            "snippet": "OS_MessageLogging(\"%s %d>$TNG$<$1>\",__LINE__,gscpCFileName);"
+            "snippet": "OS_MessageLogging(\"%s %d>$$TNG$<$1>\",gsCpCcFileName,__LINE__);"
         },
         "when": "editorTextFocus"
     },

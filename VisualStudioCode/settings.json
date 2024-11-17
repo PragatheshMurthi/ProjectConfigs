@@ -62,10 +62,11 @@
     "debug.onTaskErrors": "showErrors",
     
     "code-runner.executorMap": {
+
     
         "javascript": "node",
         "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-        "c": "cd $dir && gcc -I\\headers $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "c": "cd $dir && gcc -I.\\headers -I.\\ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "zig": "zig run",
         "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
@@ -122,7 +123,7 @@
         "gleam": "gleam run -m $fileNameWithoutExt"
     },
     "git.suggestSmartCommit": false,
-    "C_Cpp.intelliSenseCachePath": "C:\\Pragathesh\\C_Programming\\Learning-C\\headers/**",
+    "C_Cpp.intelliSenseCachePath": "C:\\Pragathesh\\C_Programming\\Learning-C\\headers/",
 
     "editor.fontWeight": "bold", // This will make the text bold
 
@@ -226,6 +227,21 @@
         ]
     },
     "cSpell.userWords": [
+        "CPCHAR",
         "FLOATV"
-    ]
+    ],
+    "C_Cpp.default.compilerArgs": [
+        "-Werror"
+    ],
+    "C_Cpp.codeAnalysis.clangTidy.args": [
+        "-Werror"
+    ],
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "C_Cpp.codeAnalysis.updateDelay": 6000,
+    "C_Cpp.default.compilerPath": "",
+    "C_Cpp.errorSquiggles": "enabled",
+    "c-cpp-compile-run.c-compiler": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
+    "c-cpp-compile-run.cpp-compiler": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+    "c-cpp-compile-run.cpp-flags": "-Wall -Wextra -g3 -I./headers",
+    "c-cpp-compile-run.c-flags": "-Wall -Wextra -g3 -I./headers"
 }
